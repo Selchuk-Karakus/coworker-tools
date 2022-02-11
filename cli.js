@@ -22,5 +22,14 @@ if (command === "list") {
 
 function runListCommand() {
   // Replace this with your implementation
-  console.log("Called the list command");
+  members.forEach(({firstName, lastName, jobTitle, location, userSlack}) =>
+  
+  console.log(
+  `
+  Full name: ${firstName} ${lastName}
+  Role: ${jobTitle}
+  Location: ${location}
+  Slack user name: ${userSlack}
+  `)
+  );
 }
